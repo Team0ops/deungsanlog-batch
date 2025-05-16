@@ -35,3 +35,14 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# 로그/임시
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 환경 설정
+.env
+application-secret.yml
+application-*.yml
