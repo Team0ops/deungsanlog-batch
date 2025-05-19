@@ -37,3 +37,12 @@ out/
 .vscode/
 
 application-secret.properties
+
+# 로그/임시
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 환경 설정
+application-secret.yml
