@@ -36,6 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
+application-secret.properties
+
 # 로그/임시
 *.log
 *.tmp
@@ -43,6 +45,4 @@ out/
 *.swp
 
 # 환경 설정
-.env
 application-secret.yml
-application-*.yml
