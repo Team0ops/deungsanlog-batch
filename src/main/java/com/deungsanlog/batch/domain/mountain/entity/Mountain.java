@@ -16,10 +16,10 @@ public class Mountain {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(length = 100, nullable = false)
     private String name;
 
-    @Column
+    @Column(length = 100)
     private String location;
 
     private Integer elevation;
@@ -30,10 +30,10 @@ public class Mountain {
     @Column
     private BigDecimal longitude;
 
-    @Column
+    @Column(length = 255)
     private String thumbnailImgUrl;
 
-    @Column
+    @Column(length = 50)
     private String externalId;
 
     @Column(updatable = false)
