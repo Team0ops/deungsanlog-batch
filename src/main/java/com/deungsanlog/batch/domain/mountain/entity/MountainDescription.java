@@ -37,4 +37,13 @@ public class MountainDescription {
     @Column(length = 50)
     private String difficulty;
 
+    @Column(columnDefinition = "TEXT")
+    private String hikingPointInfo;
+
+    @Column(columnDefinition = "TEXT")
+    private String hikingCourseInfo;
+
+    @Column(columnDefinition = "TEXT")
+    private String transportInfo;
+
 }
