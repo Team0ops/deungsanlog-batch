@@ -73,7 +73,7 @@ public class MountainApiProcessor implements ItemProcessor<CsvFilterItem, Mounta
                 Node node = items.item(i);
                 Double actualElevation = parseDoubleSafe(getTagValue("mntninfohght", node));
                 if (actualElevation != null && expectedElevation != null &&
-                        Math.abs(actualElevation - expectedElevation) < 3.0) {
+                        Math.abs(actualElevation - expectedElevation) < 1.5) {
                     matchedItem = node;
                     break;
                 }
