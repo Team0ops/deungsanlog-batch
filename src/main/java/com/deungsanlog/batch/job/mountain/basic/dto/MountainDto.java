@@ -1,4 +1,4 @@
-package com.deungsanlog.batch.job.mountain.dto;
+package com.deungsanlog.batch.job.mountain.basic.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Builder;

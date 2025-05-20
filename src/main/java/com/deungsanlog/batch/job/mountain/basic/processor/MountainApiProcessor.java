@@ -1,9 +1,9 @@
-package com.deungsanlog.batch.job.mountain.processor;
+package com.deungsanlog.batch.job.mountain.basic.processor;
 
 import com.deungsanlog.batch.domain.mountain.entity.Mountain;
 import com.deungsanlog.batch.domain.mountain.entity.MountainDescription;
-import com.deungsanlog.batch.job.mountain.dto.CsvFilterItem;
-import com.deungsanlog.batch.job.mountain.dto.MountainDto;
+import com.deungsanlog.batch.job.mountain.basic.dto.CsvFilterItem;
+import com.deungsanlog.batch.job.mountain.basic.dto.MountainDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.item.ItemProcessor;
@@ -18,7 +18,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
-import java.net.URLEncoder;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.StringReader;

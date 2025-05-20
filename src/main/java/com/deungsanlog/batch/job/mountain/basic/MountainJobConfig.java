@@ -1,9 +1,9 @@
-package com.deungsanlog.batch.job.mountain;
+package com.deungsanlog.batch.job.mountain.basic;
 
 import com.deungsanlog.batch.domain.mountain.entity.Mountain;
-import com.deungsanlog.batch.job.mountain.dto.CsvFilterItem;
-import com.deungsanlog.batch.job.mountain.processor.MountainApiProcessor;
-import com.deungsanlog.batch.job.mountain.writer.MountainItemWriter;
+import com.deungsanlog.batch.job.mountain.basic.dto.CsvFilterItem;
+import com.deungsanlog.batch.job.mountain.basic.processor.MountainApiProcessor;
+import com.deungsanlog.batch.job.mountain.basic.writer.MountainItemWriter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;

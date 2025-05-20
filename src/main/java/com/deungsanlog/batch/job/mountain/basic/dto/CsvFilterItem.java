@@ -1,4 +1,4 @@
-package com.deungsanlog.batch.job.mountain.dto;
+package com.deungsanlog.batch.job.mountain.basic.dto;
 
 import lombok.Data;
 

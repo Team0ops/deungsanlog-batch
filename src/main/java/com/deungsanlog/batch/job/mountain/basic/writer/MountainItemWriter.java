@@ -1,4 +1,4 @@
-package com.deungsanlog.batch.job.mountain.writer;
+package com.deungsanlog.batch.job.mountain.basic.writer;
 
 import com.deungsanlog.batch.domain.mountain.entity.Mountain;
 import com.deungsanlog.batch.domain.mountain.repository.MountainRepository;
