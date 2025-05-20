@@ -16,7 +16,7 @@ public class MountainDescription {
     private Long id;
 
     @OneToOne
-    @JoinColumn
+    @JoinColumn(name = "mountain_id")
     private Mountain mountain;
 
     @Column(columnDefinition = "TEXT")
@@ -37,13 +37,13 @@ public class MountainDescription {
     @Column(length = 50)
     private String difficulty;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "hiking_point_info", columnDefinition = "TEXT")
     private String hikingPointInfo;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "hiking_course_info", columnDefinition = "TEXT")
     private String hikingCourseInfo;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "transport_info", columnDefinition = "TEXT")
     private String transportInfo;
 
 }
