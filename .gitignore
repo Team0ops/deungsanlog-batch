@@ -45,4 +45,4 @@ application-secret.properties
 *.swp
 
 # 환경 설정
-application-secret.yml
+application-secret.properties
