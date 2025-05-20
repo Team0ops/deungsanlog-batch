@@ -1,6 +1,6 @@
-package com.deungsanlog.batch.job.mountain.reader;
+package com.deungsanlog.batch.job.mountain.basic.reader;
 
-import com.deungsanlog.batch.job.mountain.dto.CsvFilterItem;
+import com.deungsanlog.batch.job.mountain.basic.dto.CsvFilterItem;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
 import org.springframework.context.annotation.Bean;

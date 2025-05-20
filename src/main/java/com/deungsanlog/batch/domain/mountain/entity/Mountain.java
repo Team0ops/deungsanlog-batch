@@ -25,10 +25,10 @@ public class Mountain {
     private Integer elevation;
 
     @Column
-    private BigDecimal latitude;
+    private Double latitude;
 
     @Column
-    private BigDecimal longitude;
+    private Double longitude;
 
     @Column(length = 255)
     private String thumbnailImgUrl;

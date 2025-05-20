@@ -4,4 +4,5 @@ import com.deungsanlog.batch.domain.mountain.entity.MountainDescription;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MountainDescriptionRepository extends JpaRepository<MountainDescription, Long> {
+    MountainDescription findByMountain_Id(Long mountainId);
 }
