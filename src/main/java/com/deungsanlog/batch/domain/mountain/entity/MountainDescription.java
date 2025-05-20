@@ -19,10 +19,10 @@ public class MountainDescription {
     @JoinColumn
     private Mountain mountain;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String summary;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String fullDescription;
 
     @Column
@@ -31,6 +31,10 @@ public class MountainDescription {
     @Column
     private LocalTime sunsetTime;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String nearbyTourInfo;
+
+    @Column(length = 50)
+    private String difficulty;
+
 }
