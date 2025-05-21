@@ -25,12 +25,6 @@ public class MountainDescription {
     @Column(columnDefinition = "TEXT")
     private String fullDescription;
 
-    @Column
-    private LocalTime sunriseTime;
-
-    @Column
-    private LocalTime sunsetTime;
-
     @Column(columnDefinition = "TEXT")
     private String nearbyTourInfo;
 
