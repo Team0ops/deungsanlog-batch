@@ -19,7 +19,9 @@ public class DeungsanlogBatchApplication {
 	public CommandLineRunner run(JobLauncher jobLauncher, JobRegistry jobRegistry) {
 		return args -> {
 			if (args.length == 0) {
-				throw new IllegalArgumentException("실행하고 싶은 Job 이름을 파라미터로 넘겨주세요");
+				// 명령줄로 실행한 게 아니면 (Quartz 등 자동 실행을 위해) 그냥 무시
+				System.out.println("[CommandLineRunner] Job 인자 없음 → 실행하지 않고 패스");
+				return;
 			}
 
 			for (String jobName : args) {
