@@ -13,7 +13,6 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -41,7 +40,6 @@ public class MountainSunProcessor implements ItemProcessor<MountainSunRow, List<
     private boolean firstRun = true;
 
     @Override
-    @Transactional
     public List<MountainSunInfo> process(MountainSunRow row) {
         Mountain mountain = mountainRepository.findById(row.getMountainId())
                 .orElseThrow(() -> new IllegalArgumentException("산 정보 없음: id = " + row.getMountainId()));
